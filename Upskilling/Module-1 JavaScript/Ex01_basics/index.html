@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Portal</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; background: #f5f0eb; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    .wrap { text-align: center; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); }
+    h1 { font-size: 2rem; color: #2c3e50; margin-bottom: 16px; }
+    p { color: #555; margin-bottom: 20px; font-size: 1.1rem; }
+    button { background: #2c3e50; color: #fff; border: none; padding: 10px 24px; border-radius: 5px; cursor: pointer; font-size: 1rem; }
+    button:hover { background: #3d5166; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Community Event Portal</h1>
+    <p id="msg">Loading...</p>
+    <button onclick="greet()">Say Hello</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

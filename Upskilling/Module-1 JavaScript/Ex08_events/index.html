@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Handling</title>
+  <style>
+    body { font-family: Georgia, serif; background: #f2f6fb; padding: 30px; }
+    h2 { color: #1a252f; margin-bottom: 20px; }
+    .top { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; align-items: center; }
+    input[type="text"] { padding: 9px 14px; border: 1px solid #ccc; border-radius: 5px; font-size: 0.95rem; width: 200px; }
+    select { padding: 9px 14px; border: 1px solid #ccc; border-radius: 5px; font-size: 0.95rem; }
+    #hint { font-size: 0.8rem; color: #888; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px; }
+    .ev-card { background: #fff; padding: 18px; border-radius: 8px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+    .ev-card h3 { color: #2c3e50; margin-bottom: 6px; font-size: 0.95rem; }
+    .ev-card p { color: #777; font-size: 0.85rem; margin-bottom: 10px; }
+    .ev-card button { background: #2c3e50; color: #fff; border: none; padding: 7px 14px; border-radius: 4px; cursor: pointer; }
+    #toast { position: fixed; bottom: 24px; right: 24px; background: #27ae60; color: #fff; padding: 12px 20px; border-radius: 6px; display: none; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h2>Browse Events</h2>
+  <div class="top">
+    <input type="text" id="search" placeholder="Search (press Enter)" />
+    <select id="catFilter" onchange="filterCat()">
+      <option value="all">All Categories</option>
+      <option value="Music">Music</option>
+      <option value="Food">Food</option>
+      <option value="Art">Art</option>
+      <option value="Wellness">Wellness</option>
+    </select>
+    <span id="hint">Press Enter to search</span>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div id="toast"></div>
+  <script src="main.js"></script>
+</body>
+</html>

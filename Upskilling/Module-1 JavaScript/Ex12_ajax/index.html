@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX & Fetch</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Georgia, serif; background: #f2f6fb; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+    .box { background: #fff; padding: 36px 40px; border-radius: 10px; box-shadow: 0 3px 14px rgba(0,0,0,0.1); width: 100%; max-width: 420px; }
+    h2 { color: #1a252f; margin-bottom: 22px; }
+    label { display: block; font-size: 0.9rem; color: #444; margin-bottom: 4px; margin-top: 12px; }
+    input, select { width: 100%; padding: 9px 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 0.95rem; }
+    button { margin-top: 18px; width: 100%; background: #2c3e50; color: #fff; border: none; padding: 11px; border-radius: 5px; font-size: 1rem; cursor: pointer; }
+    #status { margin-top: 16px; padding: 12px; border-radius: 5px; text-align: center; display: none; font-size: 0.9rem; }
+    .ok { background: #eafaf1; color: #27ae60; }
+    .fail { background: #fff0f0; color: #e74c3c; }
+    .wait { background: #fef9e7; color: #d4ac0d; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Submit Registration</h2>
+    <label>Name</label>
+    <input type="text" id="nm" placeholder="Your name" />
+    <label>Email</label>
+    <input type="email" id="em" placeholder="you@email.com" />
+    <label>Event</label>
+    <select id="ev">
+      <option value="jazz">Jazz Night</option>
+      <option value="food">Food Fest</option>
+      <option value="yoga">Morning Yoga</option>
+    </select>
+    <button onclick="submit()">Submit Registration</button>
+    <div id="status"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

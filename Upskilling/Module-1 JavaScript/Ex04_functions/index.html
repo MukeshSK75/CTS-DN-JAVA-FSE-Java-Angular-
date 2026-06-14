@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Functions Demo</title>
+  <style>
+    body { font-family: Georgia, serif; background: #f2f6fb; padding: 30px; }
+    h2 { color: #1a252f; margin-bottom: 20px; }
+    .section { background: #fff; padding: 20px 26px; border-radius: 8px; margin-bottom: 18px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+    .section h3 { margin-bottom: 10px; color: #2c3e50; }
+    input, select { padding: 8px 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 0.95rem; margin-right: 8px; }
+    button { background: #2c3e50; color: #fff; border: none; padding: 8px 18px; border-radius: 5px; cursor: pointer; }
+    #output { margin-top: 14px; color: #333; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <h2>Event Functions</h2>
+  <div class="section">
+    <h3>Add Event</h3>
+    <input id="evName" placeholder="Event name" />
+    <input id="evCat" placeholder="Category" />
+    <button onclick="addEvent()">Add</button>
+  </div>
+  <div class="section">
+    <h3>Register User</h3>
+    <input id="userName" placeholder="Your name" />
+    <select id="catSelect">
+      <option value="music">Music</option>
+      <option value="food">Food</option>
+      <option value="art">Art</option>
+    </select>
+    <button onclick="registerUser()">Register</button>
+  </div>
+  <div class="section">
+    <h3>Filter by Category</h3>
+    <input id="filterCat" placeholder="Enter category" />
+    <button onclick="doFilter()">Filter</button>
+  </div>
+  <div id="output"></div>
+  <script src="main.js"></script>
+</body>
+</html>

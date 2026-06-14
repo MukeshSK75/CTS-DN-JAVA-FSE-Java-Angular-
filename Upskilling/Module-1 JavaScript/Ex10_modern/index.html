@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern JS</title>
+  <style>
+    body { font-family: Georgia, serif; background: #eef2f7; padding: 30px; }
+    h2 { color: #1a252f; margin-bottom: 10px; }
+    p.sub { color: #888; margin-bottom: 22px; font-size: 0.9rem; }
+    button { background: #2c3e50; color: #fff; border: none; padding: 9px 20px; border-radius: 5px; cursor: pointer; margin-bottom: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px; }
+    .card { background: #fff; padding: 16px 20px; border-radius: 8px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+    .card h3 { color: #2c3e50; margin-bottom: 5px; font-size: 0.95rem; }
+    .card p { color: #666; font-size: 0.85rem; }
+    pre { background: #fff; padding: 16px; border-radius: 8px; font-size: 0.82rem; color: #333; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <h2>Modern JS Features</h2>
+  <p class="sub">Destructuring, spread, default params in action</p>
+  <button onclick="runDemo()">Run Demo</button>
+  <div class="grid" id="grid"></div>
+  <pre id="log"></pre>
+  <script src="main.js"></script>
+</body>
+</html>

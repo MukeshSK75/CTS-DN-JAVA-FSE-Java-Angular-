@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Async JS</title>
+  <style>
+    body { font-family: Georgia, serif; background: #f5f0eb; padding: 30px; }
+    h2 { color: #2c3e50; margin-bottom: 20px; }
+    .btns { display: flex; gap: 12px; margin-bottom: 24px; }
+    button { background: #2c3e50; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+    #spinner { display: none; color: #888; font-size: 1rem; margin-bottom: 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+    .ev-card { background: #fff; padding: 18px; border-radius: 8px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+    .ev-card h3 { color: #1a252f; margin-bottom: 6px; font-size: 0.95rem; }
+    .ev-card p { color: #777; font-size: 0.85rem; }
+    .err { color: red; }
+  </style>
+</head>
+<body>
+  <h2>Async Event Fetcher</h2>
+  <div class="btns">
+    <button onclick="loadWithPromise()">Load with .then()</button>
+    <button onclick="loadWithAsync()">Load with async/await</button>
+  </div>
+  <div id="spinner">⏳ Loading events...</div>
+  <div class="grid" id="grid"></div>
+  <script src="main.js"></script>
+</body>
+</html>

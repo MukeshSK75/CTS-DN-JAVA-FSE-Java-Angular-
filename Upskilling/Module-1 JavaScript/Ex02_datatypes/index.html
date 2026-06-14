@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Details</title>
+  <style>
+    body { font-family: Georgia, serif; background: #eef2f7; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    .card { background: #fff; padding: 36px 50px; border-radius: 10px; box-shadow: 0 3px 14px rgba(0,0,0,0.1); max-width: 420px; width: 100%; }
+    h2 { color: #1a252f; margin-bottom: 18px; }
+    p { color: #444; margin-bottom: 10px; font-size: 1rem; }
+    .seats { font-size: 1.3rem; font-weight: bold; color: #27ae60; margin: 14px 0; }
+    .btns { display: flex; gap: 10px; margin-top: 16px; }
+    button { flex: 1; padding: 10px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.95rem; }
+    #regBtn { background: #2c3e50; color: #fff; }
+    #cancelBtn { background: #e74c3c; color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2 id="title"></h2>
+    <p id="info"></p>
+    <div class="seats">Seats left: <span id="seats"></span></div>
+    <div class="btns">
+      <button id="regBtn" onclick="register()">Register</button>
+      <button id="cancelBtn" onclick="cancel()">Cancel</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
